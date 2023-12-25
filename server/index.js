@@ -21,7 +21,7 @@ app.listen(port, ( req, res ) => {
 
 const { Server } = require("socket.io");
 
-const io = new Server({ cors: "http://localhost:5173"});
+const io = new Server({ cors: "https://a-flax-omega.vercel.app"});
 
 let onlineUsers = [];
 
