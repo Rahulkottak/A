@@ -29,7 +29,7 @@ export const ChatContextProvider = ({ children, user }) => {
     // console.log("notifications: ", notifications)
 
     useEffect(() => {
-        const newSocket = io("http://localhost:2000");
+        const newSocket = io("http://localhost:5173");
         setSocket(newSocket);
 
         return () => {
