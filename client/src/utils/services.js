@@ -1,4 +1,4 @@
-export const baseUrl = 'http://localhost:1000/api' ;
+export const baseUrl = 'https://a-flax-omega.vercel.app/api' ;
 
 export const postRequest = async ( url, body ) => {
 
