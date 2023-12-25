@@ -1,4 +1,4 @@
-export const baseUrl = 'http://localhost:1000/api' ;
+export const baseUrl = 'https://a-flax-omega.vercel.app/api' ;
 
 export const postRequest = async ( url, body ) => {
 
@@ -10,6 +10,7 @@ export const postRequest = async ( url, body ) => {
         body,
     })
 
+    
     const data = await response.json();
     if(!response.ok) {
         let message ;

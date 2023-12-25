@@ -8,7 +8,7 @@ require('dotenv').config();
 const connectDB = require('./config/db');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: false }));
 app.use('/api/users', userRoute);
 app.use('/api/chats', chatRoute);
 app.use('/api/messages', messageRoute);
@@ -19,9 +19,11 @@ app.listen(port, ( req, res ) => {
     connectDB();
 })
 
+
+
 const { Server } = require("socket.io");
 
-const io = new Server({ cors: "http://localhost:5173"});
+const io = new Server({ cors : "https://a-flax-omega.vercel.app"});
 
 let onlineUsers = [];
 
@@ -59,4 +61,4 @@ io.on("connection", (socket) => {
     })
 });
 
-io.listen(2000);
+// io.listen(2000);
