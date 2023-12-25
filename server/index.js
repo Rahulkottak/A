@@ -23,7 +23,11 @@ app.listen(port, ( req, res ) => {
 
 const { Server } = require("socket.io");
 
+<<<<<<< HEAD
 const io = new Server({ cors : "https://a-flax-omega.vercel.app"});
+=======
+const io = new Server({ cors: "https://a-flax-omega.vercel.app"});
+>>>>>>> 8e3d8137b75fe3259555ec63345d0485b2e591fd
 
 let onlineUsers = [];
 
@@ -61,4 +65,7 @@ io.on("connection", (socket) => {
     })
 });
 
+<<<<<<< HEAD
 // io.listen(2000);
+=======
+>>>>>>> 8e3d8137b75fe3259555ec63345d0485b2e591fd
